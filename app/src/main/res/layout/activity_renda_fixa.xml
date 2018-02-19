@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ppedr.orama_app.RendaFixaActivity">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#9AB333"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="116dp"
+        tools:layout_editor_absoluteY="0dp">
+
+
+        <EditText
+            android:id="@+id/editText14"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Sul América Juro Real Curto FIRF LP 15/02/2018 -0,16 1,24 13,37 5.000,00 D+2                                      Renda Fixa | Renda Fixa Duração Livre Soberano"
+            android:textSize="20dp" />
+
+        <EditText
+            android:id="@+id/editText13"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:inputType="textMultiLine"
+            android:text="Órama Inflação IPCA FIRF LP 15/02/2018 -0,14  1,16 12,34 1.000,00 D+0                                                Renda Fixa | Renda Fixa Duração Livre Soberano"
+            android:textSize="20dp" />
+
+
+    </LinearLayout>
+
+    </android.support.constraint.ConstraintLayout>

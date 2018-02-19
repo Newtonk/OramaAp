@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.ppedr.orama_app.MainActivity"
+    >
+
+
+    <android.support.v4.widget.DrawerLayout
+
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/drawerLayout"
+    android:background="#9AB333">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <!--<include-->
+            <!--layout="@layout/navigation_action"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content" />-->
+
+            <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-80dp"
+
+                app:srcCompat="@drawable/orama_investimentos_blog" />
+
+
+            <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginTop="-20dp">
+
+                <TableLayout
+                    android:id="@+id/tl1"
+                    android:stretchColumns="*"
+                    android:layout_height="fill_parent"
+                    android:layout_width="fill_parent"
+                    android:layout_centerInParent="true" >
+
+                    <TableRow
+                        android:id="@+id/tr1"
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:text="Renda Fixa"
+                            android:background="#7C9229"
+                            android:onClick="clickRendaFixa"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                        <Button
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:text="Estratégias \n Diferenciadas"
+                            android:textSize="11.5dp"
+                            android:onClick="clickEstrategias"
+                            android:background="#7C9229"
+                            android:textColor="#fff"
+                            android:textStyle="bold" />
+
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_width="fill_parent"
+                        android:layout_height="0px"
+                        android:layout_weight="1" >
+
+                        <Button
+                            android:layout_weight="1"
+                            android:layout_margin="3dp"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:text="Renda Variável"
+                            android:onClick="clickRendaVariavel"
+                            android:background="#7C9229"
+                            android:textColor="#fff"
+                            android:textStyle="bold"/>
+
+                        <Button
+                            android:layout_margin="3dp"
+                            android:layout_weight="1"
+                            android:layout_height="fill_parent"
+                            android:layout_width="fill_parent"
+                            android:text="Todos Investimentos"
+                            android:onClick="clickTodos"
+                            android:background="#7C9229"
+                            android:textColor="#fff"
+                            android:textStyle="bold"/>
+
+                    </TableRow>
+
+                </TableLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <android.support.design.widget.NavigationView
+        android:id="@+id/nav_menu"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:menu="@menu/navigation_menu"
+        android:layout_gravity="start"
+        app:headerLayout="@layout/navigation_header">
+
+    </android.support.design.widget.NavigationView>
+
+
+</android.support.v4.widget.DrawerLayout>
+
+</RelativeLayout>

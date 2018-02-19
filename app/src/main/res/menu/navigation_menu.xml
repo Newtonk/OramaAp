@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+        <item android:title="Menu">
+            <menu>
+                <item android:id="@+id/nav_cat1"
+
+                android:title="Pagina Inicial" />
+
+                <item android:id="@+id/nav_cat2"
+
+                android:title="Renda Fixa" />
+
+                <item android:id="@+id/nav_cat3"
+
+                android:title="Estratégias Diferenciadas " />
+
+                <item android:id="@+id/nav_cat4"
+
+                android:title="Renda Variável" />
+
+                <item android:id="@+id/nav_cat5"
+
+                android:title="Todos Investimentos" />
+            </menu>
+        </item>
+
+            <group>
+                <item android:id="@+id/nav_logout"
+
+                    android:title="Logout" />
+                    <!--android:icon="@mipmap/ic_menu_logout"-->
+
+            </group>
+
+    </menu>
